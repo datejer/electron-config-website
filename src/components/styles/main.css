@@ -1,0 +1,227 @@
+@import "_normalize.css";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	color: #333333;
+}
+
+.center {
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 2.5em;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1700px;
+}
+
+.wrapper h1 {
+	font-size: 4em;
+	text-align: center;
+}
+
+#table {
+	display: grid;
+	grid-template-columns: repeat(17, auto) 1fr;
+}
+
+/* Every element box  */
+.element {
+	cursor: pointer;
+	width: 5vw;
+	height: 5vw;
+
+	padding: 2px;
+	border: 1px solid #333333;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+
+.number {
+	float: left;
+	font-size: 0.5vw;
+	position: absolute;
+}
+
+.symbol {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0.5vw;
+	font-size: 2.5vw;
+}
+
+.element-name {
+	font-size: 0.8vw;
+	text-align: center;
+}
+
+#element-box .symbol {
+	font-size: 5vw;
+}
+
+#element-box .number {
+	font-size: 1vw;
+}
+
+#element-box .element-name {
+	font-size: 1.5vw;
+}
+
+#element-box {
+	grid-column: 3/5;
+	grid-row: 2/4;
+	margin: 0;
+	padding: 0.2vw;
+	overflow: hidden;
+}
+
+/* Information Table  */
+#information {
+	grid-column: 5/13;
+	grid-row: 2/4;
+	padding: 0.5vw;
+	padding-top: 0;
+	font-size: 1vw;
+	max-height: 10vw;
+	overflow-y: scroll;
+}
+
+#information h2 {
+	margin: 0 0 0.5vw 0;
+}
+
+.big_title {
+	display: inline-block;
+	font-size: 2em;
+}
+
+.cat_name {
+	border-radius: 3px;
+	padding: 0 5px;
+	margin-left: 5px;
+	top: -0.7vw;
+	position: relative;
+}
+
+.close-button {
+	float: right;
+	cursor: pointer;
+	color: #cccccc;
+	font-size: xx-large;
+}
+
+.close-button:hover {
+	color: #333333;
+}
+
+.appearance {
+	margin-bottom: 0.5vw;
+}
+
+.atom_info {
+	margin-bottom: 0.5vw;
+	color: #3b3b3b;
+}
+
+/* Helium to the top right  */
+.element-2 {
+	grid-column-start: -2;
+}
+
+/* Boron & Alumunium to the right  */
+.element-5,
+.element-13 {
+	grid-column-start: 13;
+}
+
+/* Lanthinide & Actinoid split  */
+.element-58,
+.element-90 {
+	grid-column-start: 3;
+}
+
+/* I DID NOT KNOW THERE WAS 119th ONE! */
+
+.element-119 {
+	grid-column-start: -2;
+}
+
+/* Categories and Groups */
+
+/* Noble Gas  */
+.noble {
+	background: #f3d2e8;
+}
+
+/* Alkali Metal  */
+.alkali {
+	background: #f88379;
+}
+
+/* Alkaline Earth Metal  */
+.alkaline {
+	background: #ffc3a0;
+}
+
+/* Transition Metal  */
+.transition {
+	background: #e9ff08;
+}
+
+/* Polyatomic Non Metal  */
+.polyatomic {
+	background: #a3d2d5;
+}
+
+/* Diatomic Non Metal  */
+.diatomic {
+	background: #a3d5bf;
+}
+
+/* Post Transition Metal  */
+.post-transition {
+	background: #8eb1e7;
+}
+
+/* Metalloid  */
+.metalloid {
+	background: #5ed89c;
+}
+
+/* Lanthanide  */
+.lanthanide {
+	background: #cc99ff;
+	/* Put a space to seperate the split table  */
+	/* margin-top: 2.5vw; */
+}
+
+/* Actinide  */
+.actinide {
+	background: #ad87bd;
+}
+
+/* The Unknown Element  */
+.unknown {
+	background: #ccffff;
+}
+
+/* Disable the top space for the first lathenide which sits inside the table  */
+.element-57 {
+	margin: 0;
+}
+
+/* When in the hover state  */
+.active {
+	background: #fff;
+	/* border-color: yellow; */
+}
