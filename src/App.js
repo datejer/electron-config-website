@@ -7,10 +7,13 @@ function App() {
 		<div className="App">
 			<Table />
 			<p className="footer">
-				Made by <a href="https://github.com/datejer">ejer</a>
+				Made by <a href="http://ejer.ga/">ejer</a>
 				<br />
-				Based on Periodic Table by{" "}
-				<a href="https://github.com/TamalAnwar">Tamal Anwar Chowdhury</a>
+				Based on{" "}
+				<a href="https://github.com/TamalAnwar/periodic-table">
+					Periodic Table
+				</a>{" "}
+				by <a href="https://github.com/TamalAnwar">Tamal Anwar Chowdhury</a>
 			</p>
 		</div>
 	);
